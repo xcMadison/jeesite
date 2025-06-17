@@ -26,6 +26,22 @@
 		</developer>
 	</developers>
 	
+	<build>
+	<plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+            <skipTests>false</skipTests>  <!-- 确保测试没有被跳过 -->
+            <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory> <!-- 设置报告目录 -->
+        </configuration>
+    </plugin>
+</plugins>
+
+	</build>
+
+	
 	<organization>
 		<name>JeeSite</name>
 		<url>http://jeesite.com</url>

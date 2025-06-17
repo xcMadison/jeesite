@@ -57,7 +57,7 @@
 		<!-- environment setting -->
 		<java.version>1.8</java.version>
 		<!-- <tomcat.version>9.0.58</tomcat.version> -->
-		<maven.test.skip>true</maven.test.skip>
+		<maven.test.skip>false</maven.test.skip>
 		<resource.delimiter>@</resource.delimiter>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
